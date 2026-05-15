@@ -1,0 +1,113 @@
+/* ===========================
+   ページヘッド（下層ページ共通）
+   =========================== */
+.page-head {
+  background: var(--color-beige);
+  padding: 56px 0 48px;
+  border-bottom: 1px solid #d9cfc0;
+}
+
+.page-head-en {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-matcha);
+  margin-bottom: 8px;
+}
+
+.page-head-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--color-sumi);
+}
+
+/* ===========================
+   会社概要テーブル
+   =========================== */
+.company-section {
+  padding-top: 72px;
+  padding-bottom: 96px;
+}
+
+.company-table {
+  max-width: 800px;
+}
+
+.company-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 0 32px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-beige);
+  align-items: baseline;
+}
+
+.company-row:first-child {
+  border-top: 1px solid var(--color-beige);
+}
+
+.company-row dt {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-matcha-dk);
+  line-height: 1.6;
+}
+
+.company-row dd {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--color-sumi);
+}
+
+.company-row dd a {
+  color: var(--color-matcha);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.company-row dd a:hover {
+  border-color: var(--color-matcha);
+}
+
+.company-note {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-sumi-lt);
+  margin-top: 4px;
+}
+
+.company-list {
+  list-style: none;
+  padding: 0;
+}
+
+.company-list li {
+  padding-left: 1em;
+  position: relative;
+}
+
+.company-list li::before {
+  content: '・';
+  position: absolute;
+  left: 0;
+  color: var(--color-matcha);
+}
+
+/* ===========================
+   レスポンシブ
+   =========================== */
+@media (max-width: 600px) {
+  .company-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .company-row dt {
+    font-size: 0.8rem;
+    color: var(--color-matcha);
+  }
+}

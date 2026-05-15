@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d8cca8"/>
+      <stop offset="100%" stop-color="#6a5830"/>
+    </linearGradient>
+    <radialGradient id="liquid" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#c09858"/>
+      <stop offset="100%" stop-color="#6a4818"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- 茶葉（散らす） -->
+  <g opacity="0.35">
+    <ellipse cx="150" cy="120" rx="28" ry="10" fill="#4a3810" transform="rotate(-30,150,120)"/>
+    <ellipse cx="220" cy="80" rx="22" ry="8" fill="#5a4820" transform="rotate(20,220,80)"/>
+    <ellipse cx="640" cy="100" rx="26" ry="9" fill="#4a3810" transform="rotate(45,640,100)"/>
+    <ellipse cx="680" cy="160" rx="20" ry="7" fill="#5a4820" transform="rotate(-15,680,160)"/>
+    <ellipse cx="120" cy="480" rx="24" ry="9" fill="#4a3810" transform="rotate(60,120,480)"/>
+    <ellipse cx="680" cy="460" rx="22" ry="8" fill="#5a4820" transform="rotate(-40,680,460)"/>
+  </g>
+
+  <!-- 湯呑み（少し太め・素朴な形） -->
+  <ellipse cx="400" cy="430" rx="148" ry="20" fill="#1a1a1a" opacity="0.18"/>
+
+  <path d="M278,200 Q268,390 295,422 Q340,448 400,448 Q460,448 505,422 Q532,390 522,200Z" fill="#5a3a18"/>
+  <path d="M285,202 Q276,388 302,418 Q345,443 400,443 Q455,443 498,418 Q523,388 515,202Z" fill="#f2e8d0"/>
+
+  <!-- 液面 -->
+  <ellipse cx="400" cy="202" rx="115" ry="17" fill="url(#liquid)"/>
+
+  <!-- 縁 -->
+  <ellipse cx="400" cy="200" rx="117" ry="18" fill="#5a3a18"/>
+  <ellipse cx="400" cy="198" rx="115" ry="16" fill="#e8dcc0"/>
+
+  <!-- 湯気（細い） -->
+  <path d="M375,184 Q368,148 378,118" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M400,180 Q394,143 403,112" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+  <path d="M425,184 Q420,146 430,116" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- 茶托（受け皿） -->
+  <ellipse cx="400" cy="445" rx="160" ry="20" fill="#5a3a18"/>
+  <ellipse cx="400" cy="443" rx="155" ry="17" fill="#e0d0b0"/>
+
+  <!-- テキスト -->
+  <text x="400" y="520" font-family="'Noto Serif JP', serif" font-size="30" fill="white" text-anchor="middle" letter-spacing="6" opacity="0.9">京番茶</text>
+  <text x="400" y="555" font-family="serif" font-size="14" fill="white" text-anchor="middle" letter-spacing="4" opacity="0.6">KYOBANCHA</text>
+</svg>

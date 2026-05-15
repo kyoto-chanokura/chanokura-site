@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#c8ddc0"/>
+      <stop offset="100%" stop-color="#3d6b4f"/>
+    </radialGradient>
+    <radialGradient id="bowl" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#e8f0e0"/>
+      <stop offset="100%" stop-color="#a8c8a0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1a1a1a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- 茶碗（椀形） -->
+  <ellipse cx="400" cy="390" rx="180" ry="30" fill="#1a1a1a" opacity="0.25" filter="url(#shadow)"/>
+  <path d="M220,310 Q220,430 400,440 Q580,430 580,310 Q560,250 400,245 Q240,250 220,310Z" fill="#2a1f1a"/>
+  <path d="M235,305 Q235,415 400,425 Q565,415 565,305 Q548,252 400,248 Q252,252 235,305Z" fill="url(#bowl)"/>
+
+  <!-- 抹茶の液面 -->
+  <ellipse cx="400" cy="300" rx="155" ry="30" fill="#4a8a5a" opacity="0.9"/>
+  <ellipse cx="400" cy="298" rx="148" ry="26" fill="#5a9a6a"/>
+
+  <!-- 泡（薄いドット） -->
+  <circle cx="370" cy="293" r="18" fill="#7ab87a" opacity="0.5"/>
+  <circle cx="415" cy="289" r="12" fill="#8ac88a" opacity="0.4"/>
+  <circle cx="390" cy="302" r="8" fill="#6aaa6a" opacity="0.3"/>
+
+  <!-- 茶筅の跡（円形の筋） -->
+  <ellipse cx="400" cy="296" rx="60" ry="14" fill="none" stroke="#3d7a4d" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="400" cy="296" rx="90" ry="20" fill="none" stroke="#3d7a4d" stroke-width="1" opacity="0.4"/>
+
+  <!-- テキスト -->
+  <text x="400" y="520" font-family="'Noto Serif JP', serif" font-size="32" fill="white" text-anchor="middle" letter-spacing="8" opacity="0.9">抹茶</text>
+  <text x="400" y="555" font-family="serif" font-size="14" fill="white" text-anchor="middle" letter-spacing="4" opacity="0.6">MATCHA</text>
+</svg>

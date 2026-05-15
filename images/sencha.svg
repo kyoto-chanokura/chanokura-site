@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0d8"/>
+      <stop offset="100%" stop-color="#8aaa6a"/>
+    </linearGradient>
+    <radialGradient id="cup" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#d8cbb8"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- 急須の影 -->
+  <ellipse cx="400" cy="420" rx="160" ry="22" fill="#1a1a1a" opacity="0.15"/>
+
+  <!-- 急須本体 -->
+  <path d="M270,200 Q255,340 300,400 Q350,440 400,440 Q450,440 500,400 Q545,340 530,200 Q480,160 400,158 Q320,160 270,200Z" fill="#2a1f1a"/>
+  <path d="M278,202 Q264,338 308,396 Q356,434 400,434 Q444,434 492,396 Q524,338 522,202 Q474,165 400,163 Q326,165 278,202Z" fill="url(#cup)"/>
+
+  <!-- 蓋 -->
+  <ellipse cx="400" cy="200" rx="132" ry="22" fill="#2a1f1a"/>
+  <ellipse cx="400" cy="198" rx="128" ry="19" fill="#e0d4c0"/>
+  <circle cx="400" cy="182" r="14" fill="#2a1f1a"/>
+  <circle cx="400" cy="180" r="12" fill="#d0c4b0"/>
+
+  <!-- 注ぎ口 -->
+  <path d="M270,270 Q200,255 185,295 Q182,320 200,325 Q225,330 265,310" fill="#2a1f1a"/>
+  <path d="M273,274 Q205,260 192,297 Q189,318 206,323 Q229,326 268,308" fill="#c8bca8"/>
+
+  <!-- 取っ手 -->
+  <path d="M525,250 Q590,240 600,290 Q605,330 565,345 Q545,350 530,340" fill="none" stroke="#2a1f1a" stroke-width="18" stroke-linecap="round"/>
+  <path d="M525,250 Q588,241 597,290 Q602,328 563,343 Q544,348 530,339" fill="none" stroke="#c8bca8" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- お茶の水面 -->
+  <ellipse cx="400" cy="225" rx="120" ry="16" fill="#a8c870" opacity="0.8"/>
+
+  <!-- テキスト -->
+  <text x="400" y="520" font-family="'Noto Serif JP', serif" font-size="32" fill="#2a4f39" text-anchor="middle" letter-spacing="8" opacity="0.9">煎茶</text>
+  <text x="400" y="555" font-family="serif" font-size="14" fill="#2a4f39" text-anchor="middle" letter-spacing="4" opacity="0.6">SENCHA</text>
+</svg>
