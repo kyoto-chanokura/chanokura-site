@@ -398,6 +398,104 @@ ul { list-style: none; }
 }
 
 /* ===========================
+   茶師の紹介
+   =========================== */
+.chashi-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  margin-top: 48px;
+}
+
+.chashi-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+
+.chashi-photo {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--color-beige);
+  border-radius: 2px;
+}
+
+.chashi-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.chashi-title {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--color-matcha);
+  margin-bottom: 8px;
+}
+
+.chashi-name {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-sumi);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.chashi-name-en {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--color-sumi-lt);
+}
+
+.chashi-grade {
+  font-size: 0.825rem;
+  color: var(--color-sumi-lt);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-beige);
+}
+
+.chashi-bio {
+  font-size: 0.9rem;
+  color: var(--color-sumi);
+  line-height: 2;
+}
+
+.chashi-quote {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--color-matcha);
+  background: var(--color-kinari);
+  font-size: 0.9rem;
+  line-height: 2;
+  color: var(--color-sumi);
+  font-style: normal;
+}
+
+@media (max-width: 640px) {
+  .chashi-card,
+  .chashi-card:nth-child(even) {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .chashi-photo {
+    aspect-ratio: 4 / 3;
+    max-width: 180px;
+  }
+}
+
+/* ===========================
    店舗情報
    =========================== */
 .shop {
