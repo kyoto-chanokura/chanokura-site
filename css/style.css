@@ -215,6 +215,138 @@ ul { list-style: none; }
 }
 
 /* ===========================
+   新着情報
+   =========================== */
+.news {
+  background: var(--color-white);
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.news-list {
+  margin-top: 32px;
+  border-top: 1px solid var(--color-beige);
+}
+
+.news-item {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-beige);
+  flex-wrap: wrap;
+}
+
+.news-date {
+  font-size: 0.85rem;
+  color: var(--color-sumi-lt);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.news-category {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--color-matcha);
+  border: 1px solid var(--color-matcha);
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+
+.news-text {
+  font-size: 0.95rem;
+  color: var(--color-sumi);
+}
+
+/* ===========================
+   沿革
+   =========================== */
+.history-heading {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-matcha-dk);
+  margin-top: 56px;
+  margin-bottom: 32px;
+}
+
+.history-list {
+  list-style: none;
+  max-width: 720px;
+  position: relative;
+}
+
+.history-list::before {
+  content: '';
+  position: absolute;
+  left: 148px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--color-beige);
+}
+
+.history-item {
+  display: grid;
+  grid-template-columns: 148px 1fr;
+  gap: 0 32px;
+  padding: 16px 0;
+  position: relative;
+}
+
+.history-item::before {
+  content: '';
+  position: absolute;
+  left: 144px;
+  top: 22px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-matcha);
+  border: 2px solid var(--color-kinari);
+}
+
+.history-year {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-matcha-dk);
+  text-align: right;
+  padding-right: 24px;
+  padding-top: 2px;
+  line-height: 1.5;
+}
+
+.history-ad {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-sumi-lt);
+  letter-spacing: 0;
+}
+
+.history-desc {
+  font-size: 0.9rem;
+  color: var(--color-sumi);
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .history-list::before { left: 0; }
+
+  .history-item {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+  }
+
+  .history-item::before { left: -4px; top: 18px; }
+
+  .history-year { text-align: left; padding-right: 0; }
+}
+
+/* ===========================
    商品カード
    =========================== */
 .product-card {
@@ -263,6 +395,84 @@ ul { list-style: none; }
   font-size: 0.875rem;
   color: var(--color-sumi-lt);
   line-height: 1.8;
+}
+
+/* ===========================
+   店舗情報
+   =========================== */
+.shop {
+  background: var(--color-beige);
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.shop-card {
+  background: var(--color-white);
+  padding: 32px 28px;
+  border-radius: 4px;
+}
+
+.shop-name {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-matcha-dk);
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-beige);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.shop-badge {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  background: var(--color-beige);
+  color: var(--color-sumi-lt);
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+
+.shop-info { display: flex; flex-direction: column; gap: 0; }
+
+.shop-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 0 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-kinari);
+  font-size: 0.875rem;
+}
+
+.shop-row:last-child { border-bottom: none; }
+
+.shop-row dt {
+  color: var(--color-matcha-dk);
+  font-weight: 500;
+  padding-top: 1px;
+}
+
+.shop-row dd {
+  color: var(--color-sumi);
+  line-height: 1.8;
+}
+
+.shop-row dd a {
+  color: var(--color-matcha);
+}
+
+.shop-note {
+  font-size: 0.78rem;
+  color: var(--color-sumi-lt);
 }
 
 /* ===========================

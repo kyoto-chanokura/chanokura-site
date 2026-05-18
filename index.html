@@ -29,8 +29,8 @@
       </a>
       <nav class="global-nav" aria-label="メインナビゲーション">
         <ul>
+          <li><a href="#news">新着情報</a></li>
           <li><a href="#about">京都茶乃蔵について</a></li>
-          <li><a href="#products">お茶のご紹介</a></li>
           <li><a href="#shop">店舗情報</a></li>
           <li><a href="company.html">会社概要</a></li>
           <li><a href="#contact">お問い合わせ</a></li>
@@ -50,7 +50,21 @@
     </div>
   </section>
 
-  <!-- コンセプト -->
+  <!-- 新着情報 -->
+  <section id="news" class="section news">
+    <div class="container news-inner">
+      <h2 class="section-title">新着情報</h2>
+      <ul class="news-list">
+        <li class="news-item">
+          <time class="news-date" datetime="2026-05-18">2026.05.18</time>
+          <span class="news-category">お知らせ</span>
+          <span class="news-text">2026年新茶スタート</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- コンセプト／沿革 -->
   <section id="about" class="section about">
     <div class="container">
       <h2 class="section-title">京都茶乃蔵について</h2>
@@ -59,58 +73,104 @@
         200余年にわたり京都の地で茶を守り続けてきた京都茶乃蔵。<br>
         京都の自然と職人の手仕事が生み出す、本物のお茶をお届けします。
       </p>
+
+      <h3 class="history-heading">沿革（ダミー）</h3>
+      <ol class="history-list">
+        <li class="history-item">
+          <span class="history-year">文政元年<span class="history-ad">（1818年）</span></span>
+          <span class="history-desc">京都・南区上鳥羽の地にて初代が茶の行商を始める。創業。</span>
+        </li>
+        <li class="history-item">
+          <span class="history-year">明治中期<span class="history-ad">（1890年代）</span></span>
+          <span class="history-desc">店舗を構え、宇治・山城地域の茶農家と直接取引を開始。煎茶・番茶の販売を本格化。</span>
+        </li>
+        <li class="history-item">
+          <span class="history-year">大正末期<span class="history-ad">（1920年代）</span></span>
+          <span class="history-desc">抹茶の加工・販売を開始。茶道関連の需要拡大とともに取扱品目を拡充。</span>
+        </li>
+        <li class="history-item">
+          <span class="history-year">昭和30年代<span class="history-ad">（1955年頃）</span></span>
+          <span class="history-desc">卸売・小売を兼業体制に整備。京都市内の料理屋・茶道教室への納品を本格化。</span>
+        </li>
+        <li class="history-item">
+          <span class="history-year">昭和54年<span class="history-ad">（1979年）</span></span>
+          <span class="history-desc">4月5日、株式会社設立。組織体制を整え、事業を拡大。</span>
+        </li>
+        <li class="history-item">
+          <span class="history-year">平成初期<span class="history-ad">（1990年代）</span></span>
+          <span class="history-desc">通信販売・カタログ販売を開始。全国の茶道愛好者へ直接お届けする体制を構築。</span>
+        </li>
+        <li class="history-item">
+          <span class="history-year">令和5年<span class="history-ad">（2023年）</span></span>
+          <span class="history-desc">1月1日、社名を「京都茶の蔵株式会社」に変更。創業200余年の伝統を礎に新たな一歩を踏み出す。</span>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- 商品 -->
-  <section id="products" class="section products">
-    <div class="container">
-      <h2 class="section-title">お茶のご紹介</h2>
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-img-wrap">
-            <img src="images/matcha.svg" alt="抹茶" loading="lazy">
-          </div>
-          <div class="product-body">
-            <h3 class="product-name">抹茶</h3>
-            <p class="product-desc">碾茶を石臼で丁寧に挽いた、深い緑の一服。茶道に、スイーツに。</p>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-img-wrap">
-            <img src="images/sencha.svg" alt="煎茶" loading="lazy">
-          </div>
-          <div class="product-body">
-            <h3 class="product-name">煎茶</h3>
-            <p class="product-desc">京都産の新芽をすっきりと蒸し上げた、清々しい旨みと香り。</p>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-img-wrap">
-            <img src="images/hojicha.svg" alt="ほうじ茶" loading="lazy">
-          </div>
-          <div class="product-body">
-            <h3 class="product-name">ほうじ茶</h3>
-            <p class="product-desc">香ばしく炒り上げた、やさしい香りと穏やかな甘み。毎日の一杯に。</p>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-img-wrap">
-            <img src="images/kyobancha.svg" alt="京番茶" loading="lazy">
-          </div>
-          <div class="product-body">
-            <h3 class="product-name">京番茶</h3>
-            <p class="product-desc">独特の燻香が特徴の京都の日常茶。食事とともに、ほっとする時間を。</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
 
   <!-- 店舗情報 -->
   <section id="shop" class="section shop">
     <div class="container">
       <h2 class="section-title">店舗情報</h2>
+
+      <div class="shop-grid">
+
+        <!-- 本社店 -->
+        <div class="shop-card">
+          <h3 class="shop-name">本社店</h3>
+          <dl class="shop-info">
+            <div class="shop-row">
+              <dt>住所</dt>
+              <dd>〒601-8139<br>京都市南区上鳥羽南岩ノ本町69番地</dd>
+            </div>
+            <div class="shop-row">
+              <dt>TEL</dt>
+              <dd><a href="tel:0756611691">075-661-1691</a>（代表）</dd>
+            </div>
+            <div class="shop-row">
+              <dt>営業時間</dt>
+              <dd>平日 午前9時〜午後5時30分</dd>
+            </div>
+            <div class="shop-row">
+              <dt>定休日</dt>
+              <dd>土曜日・日曜日・祝日・お盆・年末年始<br><span class="shop-note">※臨時休業日あり</span></dd>
+            </div>
+            <div class="shop-row">
+              <dt>アクセス</dt>
+              <dd>近鉄京都線「上鳥羽口」駅より徒歩約8分<br><span class="shop-note">（ダミー）</span></dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- 京都駅前店（ダミー） -->
+        <div class="shop-card">
+          <h3 class="shop-name">京都駅前店<span class="shop-badge">ダミー</span></h3>
+          <dl class="shop-info">
+            <div class="shop-row">
+              <dt>住所</dt>
+              <dd>〒600-8216<br>京都市下京区烏丸通七条下る東塩小路町</dd>
+            </div>
+            <div class="shop-row">
+              <dt>TEL</dt>
+              <dd><a href="tel:0756611691">075-000-0000</a></dd>
+            </div>
+            <div class="shop-row">
+              <dt>営業時間</dt>
+              <dd>毎日 午前10時〜午後7時</dd>
+            </div>
+            <div class="shop-row">
+              <dt>定休日</dt>
+              <dd>年末年始<br><span class="shop-note">※臨時休業日あり</span></dd>
+            </div>
+            <div class="shop-row">
+              <dt>アクセス</dt>
+              <dd>JR「京都」駅より徒歩約3分</dd>
+            </div>
+          </dl>
+        </div>
+
+      </div><!-- /.shop-grid -->
     </div>
   </section>
 
