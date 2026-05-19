@@ -627,12 +627,20 @@ ul { list-style: none; }
   font-size: 1.1rem;
   letter-spacing: 0.2em;
   color: var(--color-white);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-address,
+.footer-tel {
+  font-size: 0.825rem;
+  letter-spacing: 0.03em;
+  line-height: 2;
 }
 
 .footer-copy {
   font-size: 0.8rem;
   letter-spacing: 0.05em;
+  margin-top: 16px;
 }
 
 /* ===========================
