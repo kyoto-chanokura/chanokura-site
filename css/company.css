@@ -98,6 +98,53 @@
 }
 
 /* ===========================
+   京都茶乃蔵について（企業理念）
+   =========================== */
+.about-detail-section {
+  padding-bottom: 48px;
+}
+
+.about-detail-lead {
+  max-width: 640px;
+  line-height: 2;
+}
+
+.about-philosophy-section {
+  background: var(--color-white);
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.philosophy-block {
+  max-width: 800px;
+  margin-bottom: 64px;
+}
+
+.philosophy-block:last-child {
+  margin-bottom: 0;
+}
+
+.philosophy-lead {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-matcha-dk);
+  margin-bottom: 20px;
+}
+
+.philosophy-body {
+  font-size: 0.95rem;
+  line-height: 2.1;
+  color: var(--color-sumi);
+}
+
+.about-history-section {
+  padding-top: 72px;
+  padding-bottom: 96px;
+}
+
+/* ===========================
    レスポンシブ
    =========================== */
 @media (max-width: 600px) {
