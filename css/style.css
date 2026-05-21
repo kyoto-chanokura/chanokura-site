@@ -624,18 +624,17 @@ ul { list-style: none; }
 .btn-wholesale {
   display: inline-block;
   padding: 14px 40px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--color-white);
   color: var(--color-white);
   font-size: 0.875rem;
   letter-spacing: 0.15em;
   border-radius: 2px;
   white-space: nowrap;
-  transition: background 0.25s, border-color 0.25s;
+  transition: background 0.25s;
 }
 
 .btn-wholesale:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: var(--color-white);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 640px) {
