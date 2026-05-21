@@ -1,0 +1,133 @@
+/* ===========================
+   卸しのご案内
+   =========================== */
+.wholesale-lead-section {
+  padding-bottom: 0;
+}
+
+.wholesale-lead-section .section-lead {
+  max-width: 680px;
+  line-height: 2;
+}
+
+/* 取り扱い商品・対象 */
+.wholesale-info-section {
+  background: var(--color-white);
+}
+
+.wholesale-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.wholesale-card {
+  background: var(--color-kinari);
+  padding: 32px 28px;
+  border-radius: 4px;
+}
+
+.wholesale-card-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-matcha-dk);
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--color-beige);
+}
+
+.wholesale-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wholesale-list li {
+  font-size: 0.9rem;
+  color: var(--color-sumi);
+  padding-left: 1em;
+  position: relative;
+  line-height: 1.6;
+}
+
+.wholesale-list li::before {
+  content: '・';
+  position: absolute;
+  left: 0;
+  color: var(--color-matcha);
+}
+
+/* 取引条件 */
+.wholesale-terms-section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+/* お問い合わせ */
+.wholesale-contact-section {
+  background: var(--color-white);
+  padding-bottom: 96px;
+}
+
+.wholesale-contact-lead {
+  font-size: 0.95rem;
+  color: var(--color-sumi-lt);
+  margin-bottom: 40px;
+  line-height: 1.9;
+}
+
+.wholesale-contact-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 720px;
+}
+
+.wholesale-contact-item {
+  background: var(--color-kinari);
+  padding: 28px 24px;
+  border-radius: 4px;
+}
+
+.wholesale-contact-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--color-matcha);
+  margin-bottom: 10px;
+}
+
+.wholesale-contact-value {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-sumi);
+  line-height: 1.8;
+}
+
+.wholesale-contact-value a {
+  color: var(--color-matcha-dk);
+}
+
+.wholesale-contact-note {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--color-sumi-lt);
+  margin-top: 4px;
+}
+
+/* ===========================
+   レスポンシブ
+   =========================== */
+@media (max-width: 640px) {
+  .wholesale-grid,
+  .wholesale-contact-box {
+    grid-template-columns: 1fr;
+  }
+}
