@@ -170,6 +170,25 @@
   flex-shrink: 0;
 }
 
+/* 京かおり：縦画像の高さに横画像を合わせる */
+.kyokaori-images {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+
+.kyokaori-images .award-figure {
+  height: 280px;
+  flex-shrink: 0;
+}
+
+.kyokaori-images .award-figure img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
 .award-card {
   margin-top: 40px;
   display: flex;
