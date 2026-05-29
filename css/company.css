@@ -154,6 +154,22 @@
   padding-bottom: 72px;
 }
 
+.ochatubo-section {
+  background: var(--color-kinari);
+}
+
+.ochatubo-images {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.ochatubo-images .award-figure {
+  width: 200px;
+  flex-shrink: 0;
+}
+
 .award-card {
   margin-top: 40px;
   display: flex;
