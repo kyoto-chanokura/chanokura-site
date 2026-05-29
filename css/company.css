@@ -163,10 +163,19 @@
 }
 
 .award-images {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 24px;
-  align-items: start;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.award-figure--cert {
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.award-figure--product {
+  width: 220px;
+  flex-shrink: 0;
 }
 
 .award-figure {
