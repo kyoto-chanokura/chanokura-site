@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 京都茶乃蔵</title>
+  <meta name="description" content="京都茶乃蔵へのお問い合わせはこちらから。商品・卸し・その他のご相談を承ります。">
+
+  <meta property="og:title" content="お問い合わせ | 京都茶乃蔵">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/company.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo08sf.jpg" alt="京都茶乃蔵" class="logo-img">
+      </a>
+      <nav class="global-nav" aria-label="メインナビゲーション">
+        <ul>
+          <li><a href="about.html">京都茶乃蔵について</a></li>
+          <li><a href="tea.html">お茶の紹介</a></li>
+          <li><a href="index.html#chashi">茶師の紹介</a></li>
+          <li><a href="index.html#shop">店舗情報</a></li>
+          <li><a href="journal.html">ジャーナル</a></li>
+          <li><a href="contact.html" aria-current="page">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ページヘッド -->
+  <div class="page-head">
+    <div class="container">
+      <p class="page-head-en">Contact</p>
+      <h1 class="page-head-title">お問い合わせ</h1>
+    </div>
+  </div>
+
+  <main>
+    <section class="section contact-section">
+      <div class="container">
+
+        <p class="contact-lead">
+          商品・卸し・その他のご相談など、お気軽にお問い合わせください。<br>
+          内容を確認のうえ、担当者よりご連絡いたします。
+        </p>
+
+        <!-- ★ Formspree登録後、action の YOUR_FORM_ID を実際のIDに変更してください -->
+        <form
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          class="contact-form"
+          novalidate>
+
+          <!-- Formspreeへの返信先指定 -->
+          <input type="hidden" name="_replyto" value="">
+
+          <div class="form-group">
+            <label class="form-label" for="name">
+              お名前 <span class="form-required">必須</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              placeholder="例：山田 太郎"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="furigana">
+              フリガナ
+            </label>
+            <input
+              type="text"
+              id="furigana"
+              name="furigana"
+              class="form-input"
+              placeholder="例：ヤマダ タロウ">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="company">
+              会社名・屋号
+            </label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              class="form-input"
+              placeholder="例：京都商事株式会社">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">
+              メールアドレス <span class="form-required">必須</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="例：info@example.com"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tel">
+              電話番号
+            </label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              class="form-input"
+              placeholder="例：075-000-0000">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="category">
+              お問い合わせの種別 <span class="form-required">必須</span>
+            </label>
+            <div class="form-select-wrap">
+              <select id="category" name="category" class="form-select" required>
+                <option value="">選択してください</option>
+                <option value="商品について">商品について</option>
+                <option value="卸し・業務用について">卸し・業務用について</option>
+                <option value="ギフト・贈答について">ギフト・贈答について</option>
+                <option value="店舗・営業について">店舗・営業について</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">
+              お問い合わせ内容 <span class="form-required">必須</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-textarea"
+              rows="7"
+              placeholder="お問い合わせ内容をご記入ください"
+              required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-submit">送信する</button>
+          </div>
+
+        </form>
+
+        <div class="contact-alt">
+          <p>お電話でのお問い合わせはこちら</p>
+          <p class="contact-alt-tel"><a href="tel:0756611691">075-661-1691</a>（代表）</p>
+          <p class="contact-alt-note">受付時間：平日 午前9時〜午後5時30分</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-logo">京都茶の蔵株式会社</p>
+      <p class="footer-address">〒601-8139 京都市南区上鳥羽南岩ノ本町69番地</p>
+      <p class="footer-tel">TEL:075(661)1691　FAX:075(681)3288</p>
+      <p class="footer-tel">お客様センター（通話料無料）　0120-00-1690</p>
+      <p class="footer-copy">&copy; 2020 Kyoto-chanokura Co., Ltd.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

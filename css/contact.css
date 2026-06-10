@@ -1,0 +1,144 @@
+/* ===========================
+   お問い合わせ
+   =========================== */
+.contact-section {
+  padding-top: 72px;
+  padding-bottom: 96px;
+}
+
+.contact-lead {
+  font-size: 0.95rem;
+  color: var(--color-sumi-lt);
+  line-height: 2;
+  margin-bottom: 56px;
+}
+
+/* フォーム */
+.contact-form {
+  max-width: 680px;
+}
+
+.form-group {
+  margin-bottom: 32px;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-sumi);
+  margin-bottom: 8px;
+  letter-spacing: 0.03em;
+}
+
+.form-required {
+  font-size: 0.7rem;
+  background: var(--color-matcha);
+  color: var(--color-white);
+  padding: 2px 6px;
+  border-radius: 2px;
+  letter-spacing: 0.05em;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-sumi);
+  background: var(--color-white);
+  border: 1px solid var(--color-beige);
+  border-radius: 2px;
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--color-matcha);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #bbb;
+}
+
+.form-select-wrap {
+  position: relative;
+}
+
+.form-select-wrap::after {
+  content: '';
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--color-sumi-lt);
+  pointer-events: none;
+}
+
+.form-textarea {
+  resize: vertical;
+  line-height: 1.8;
+}
+
+.form-submit {
+  margin-top: 40px;
+}
+
+.btn-submit {
+  display: inline-block;
+  padding: 16px 64px;
+  background: var(--color-matcha);
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.btn-submit:hover {
+  background: var(--color-matcha-dk);
+}
+
+/* 電話案内 */
+.contact-alt {
+  max-width: 680px;
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-beige);
+  font-size: 0.875rem;
+  color: var(--color-sumi-lt);
+}
+
+.contact-alt-tel {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-matcha-dk);
+  margin: 8px 0 4px;
+  letter-spacing: 0.05em;
+}
+
+.contact-alt-tel a {
+  color: inherit;
+}
+
+.contact-alt-note {
+  font-size: 0.8rem;
+  color: var(--color-sumi-lt);
+}
